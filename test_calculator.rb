@@ -5,8 +5,9 @@ require './calculator.rb'
 
 class TestCalculator < MiniTest::Test
   # add takes two parameters and adds them
-  def setup do
+  def setup
     calc = Calculator.new
+  end
 
   def test_adds_0_and_0
     result = calc.adds(0, 0)
