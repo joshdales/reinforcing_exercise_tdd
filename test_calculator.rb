@@ -5,15 +5,19 @@ require './calculator.rb'
 
 class TestCalculator < MiniTest::Test
   # add takes two parameters and adds them
-  def test_adds_0_and_0
+  def setup do
     calc = Calculator.new
-    result = calc.add(0, 0)
+
+  def test_adds_0_and_0
+    result = calc.adds(0, 0)
     expected = 0
     assert_equal expected, result
   end
 
   def test_adds_2_and_2
-    assert_equal 4, add(2, 2)
+    result = calc.adds(2, 2)
+    expected = 4
+    assert_equal expected, result
   end
 
   def test_adds_positive_numbers
