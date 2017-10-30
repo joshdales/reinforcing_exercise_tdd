@@ -21,7 +21,9 @@ class TestCalculator < MiniTest::Test
   end
 
   def test_adds_positive_numbers
-    assert_equal 8, add(2, 6)
+    result = calc.adds(2, 6)
+    expected = 8
+    assert_equal expected, result
   end
 
  # subtract takes two parameters and subtracts the second from the first
