@@ -54,6 +54,8 @@ class TestCalculator < MiniTest::Test
   end
 
   def test_computes_sum_of_many_numbers
-    assert_equal 25, sum([1,3,5,7,9])
+    result = calc.computes_sum([1,3,5,7,9])
+    expected = 25
+    assert_equal expected, result
   end
 end
