@@ -7,4 +7,8 @@ class Calculator
     a + b
   end
 
+  def subtracts(a, b)
+    a - b
+  end
+
 end
