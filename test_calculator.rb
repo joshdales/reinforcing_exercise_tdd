@@ -28,7 +28,9 @@ class TestCalculator < MiniTest::Test
 
  # subtract takes two parameters and subtracts the second from the first
   def test_subtracts_numbers
-    assert_equal 6, subtract(10, 4)
+    result = calc.subtracts(10, 4)
+    expected = 6
+    assert_equal expected, result
   end
 
 # sum takes an *array* of numbers and adds them all together
