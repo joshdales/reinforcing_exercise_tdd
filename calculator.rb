@@ -11,4 +11,8 @@ class Calculator
     a - b
   end
 
+  def computes_sum(array)
+    array.sum
+  end
+
 end
